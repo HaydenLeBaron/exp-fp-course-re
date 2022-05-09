@@ -94,3 +94,5 @@ esy dune build --watch
 ```
 
 - If you feel like you shouldn't have build errors and you do, try restarting the OCaml LSP.
+
+- If you added a new function but can't use it (unbound identifier), then make sure you added it in the corresponding `.rei` file.

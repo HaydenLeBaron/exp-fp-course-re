@@ -10,7 +10,7 @@
     "release": {
       "rewritePrefix": true,
       "bin": [
-        "Test"
+        "LstTest"
       ]
     },
     "buildEnv": {
@@ -18,7 +18,7 @@
     }
   },
   "scripts": {
-    "test": "esy x Test",
+    "test": "esy x LstTest",
     "format": "esy dune build @fmt --auto-promote",
     "doc": "esy dune build @doc"
   },
