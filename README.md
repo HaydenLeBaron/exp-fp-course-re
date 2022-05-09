@@ -88,3 +88,9 @@ least one commit to that branch. The first time you submit a pull request to
 one of those branches, the builds will be slow but then subsequent pull
 requests will be faster once a pull request is merged to it.
 
+Run this in the background to avoid headaches
+```sh
+esy dune build --watch
+```
+
+- If you feel like you shouldn't have build errors and you do, try restarting the OCaml LSP.

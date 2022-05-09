@@ -10,7 +10,7 @@
     "release": {
       "rewritePrefix": true,
       "bin": [
-        "Hello"
+        "Test"
       ]
     },
     "buildEnv": {
@@ -18,14 +18,15 @@
     }
   },
   "scripts": {
-    "test": "esy x Hello",
+    "test": "esy x Test",
     "format": "esy dune build @fmt --auto-promote",
     "doc": "esy dune build @doc"
   },
   "dependencies": {
     "@opam/dune": "*",
     "@opam/reason": "*",
-    "ocaml": "4.12.x"
+    "ocaml": "4.12.x",
+    "fswatch": "*"
   },
   "devDependencies": {
     "@opam/ocaml-lsp-server": "*",
