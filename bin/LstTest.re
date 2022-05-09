@@ -1,14 +1,17 @@
 print_endline("Running Test Program:");
-open Lib.Util;
+open Lib.LstUtil;
+open Lib.CoreUtil;
 open Lib.Lst;
 
 //let () = print_endline(hello());
 
 // Print
 print_endline("== Examples");
-print_endline("Lst(Nil)        -> " ++ (Nil |> showInt));
-print_endline("Lst(Nil, 1):    -> " ++ (Cons(1, Nil) |> showInt));
-print_endline("Lst(Nil, 1, 2)  -> " ++ (Cons(2, Cons(1, Nil)) |> showInt));
+print_endline("Lst(Nil)        -> " ++ (Nil |> showListofInt));
+print_endline("Lst(Nil, 1):    -> " ++ (Cons(1, Nil) |> showListofInt));
+print_endline(
+  "Lst(Nil, 1, 2)  -> " ++ (Cons(2, Cons(1, Nil)) |> showListofInt),
+);
 print_endline("== Examples");
 print_endline("");
 

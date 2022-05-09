@@ -39,7 +39,7 @@ again with the same simple `esy` command.
 And test compiled executable (runs `scripts.tests` specified in
 `package.json`):
 
-    % esy test
+    % esy testLst
 
 You can format your code (runs `scripts.format` specified in `package.json`):
 
