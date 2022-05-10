@@ -25,6 +25,7 @@
   "dependencies": {
     "@opam/dune": "*",
     "@opam/reason": "*",
+    "@opam/qcheck": "^0.18.1",
     "ocaml": "4.12.x",
     "fswatch": "*"
   },
