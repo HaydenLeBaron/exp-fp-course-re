@@ -5,17 +5,11 @@
   "license": "MIT",
   "esy": {
     "build": "dune build -p #{self.name}",
-    "buildDev": "dune build --promote-install-files --root . --only-package #{self.name}",
+    "buildDev":
+      "dune build --promote-install-files --root . --only-package #{self.name}",
     "NOTE": "Optional release Section. Customizes result of `esy release`",
-    "release": {
-      "rewritePrefix": true,
-      "bin": [
-        "LstTest"
-      ]
-    },
-    "buildEnv": {
-      "ODOC_SYNTAX": "re"
-    }
+    "release": { "rewritePrefix": true, "bin": [ "LstTest" ] },
+    "buildEnv": { "ODOC_SYNTAX": "re" }
   },
   "scripts": {
     "test:Lst": "esy x LstTest",
@@ -24,10 +18,11 @@
   },
   "dependencies": {
     "@opam/dune": "*",
-    "@opam/reason": "*",
+    "@opam/ocamlformat": "0.21.0",
     "@opam/qcheck": "^0.18.1",
-    "ocaml": "4.12.x",
-    "fswatch": "*"
+    "@opam/reason": "*",
+    "fswatch": "*",
+    "ocaml": "4.12.x"
   },
   "devDependencies": {
     "@opam/ocaml-lsp-server": "*",
