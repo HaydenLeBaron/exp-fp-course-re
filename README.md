@@ -27,6 +27,7 @@ Now you can run your editor within the environment (which also includes merlin):
 
     % esy $EDITOR
     % esy vim
+    % esy code
 
 Alternatively you can try [vim-reasonml](https://github.com/jordwalke/vim-reasonml)
 which loads esy project environments automatically.
@@ -39,7 +40,7 @@ again with the same simple `esy` command.
 And test compiled executable (runs `scripts.tests` specified in
 `package.json`):
 
-    % esy testLst
+    % esy test:Lst
 
 You can format your code (runs `scripts.format` specified in `package.json`):
 
