@@ -1,6 +1,6 @@
 {
     "ocaml.sandbox": {
         "kind": "esy",
-        "root": "${workspaceFolder:hello-reason}"
+        "root": "${workspaceFolder:exp-fp-course-re}"
     }
 }

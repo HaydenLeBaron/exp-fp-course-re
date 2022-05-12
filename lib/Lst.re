@@ -20,11 +20,7 @@ let (^:) = (a, l) => Cons(a, l);
   >>> headOr 3 Nil
   3
 */
-let headOr: ('a, lst('a)) => 'a =
-  a =>
-    fun
-    | Nil => a
-    | Cons(x, _) => x;
+let headOr: ('a, lst('a)) => 'a = (a, _) => a;
 
 /** | Sum the elements of the list.
   >>> sum (1 :. 2 :. 3 :. Nil)
@@ -32,10 +28,7 @@ let headOr: ('a, lst('a)) => 'a =
   >>> sum (1 :. 2 :. 3 :. 4 :. Nil)
   10
 */
-let rec sum: lst(int) => int =
-  fun
-  | Nil => 0
-  | Cons(x, xs) => x + sum(xs);
+let rec sum: lst(int) => int = _ => (-1);
 
 /** | The product of the elements of a list.
   >>> product Nil
@@ -45,25 +38,13 @@ let rec sum: lst(int) => int =
   >>> product (1 :. 2 :. 3 :. 4 :. Nil)
   24
 */
-let rec product: lst(int) => int =
-  fun
-  | Nil => 1
-  | Cons(x, xs) => x * product(xs);
+let rec product: lst(int) => int = _ => (-1);
 
 /** | Return the length of the list.
   >>> length (1 :. 2 :. 3 :. Nil)
   3
 */
-let length: lst('a) => int = {
-  l => {
-    let rec f: (int, lst('a)) => int =
-      acc =>
-        fun
-        | Nil => acc
-        | Cons(_, xs) => 1 + f(acc, xs);
-    f(0, l);
-  };
-};
+let length: lst('a) => int = _ => (-1);
 
 /** | Map the given function on each element of the list.
 >>> map (+10) (1 :. 2 :. 3 :. Nil)
